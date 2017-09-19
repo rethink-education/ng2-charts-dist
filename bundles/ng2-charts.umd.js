@@ -17263,8 +17263,8 @@ var BaseChartDirective = (function () {
                 else if (changes['datasets']) {
                     this.updateChartData(changes['datasets'].currentValue);
                 }
-                else {
-                    debugger;
+                if (changes['labels']) {
+                    this.chart.data.labels = changes["labels"].currentValue;
                 }
                 this.chart.update();
             }
