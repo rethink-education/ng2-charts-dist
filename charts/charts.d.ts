@@ -1,4 +1,8 @@
 import { OnDestroy, OnInit, OnChanges, EventEmitter, ElementRef, SimpleChanges } from '@angular/core';
+
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from '@angular/platform-browser';
+
 export declare class BaseChartDirective implements OnDestroy, OnChanges, OnInit {
     static defaultColors: Array<number[]>;
     data: number[] | any[];
@@ -51,4 +55,6 @@ export interface Colors extends Color {
     label?: string;
 }
 export declare class ChartsModule {
+    static ngModuleDef: ɵngcc0.ɵɵNgModuleDefWithMeta<ChartsModule, never, never, [typeof ɵngcc1.BrowserModule]>;
+    static ngInjectorDef: ɵngcc0.ɵɵInjectorDef<ChartsModule>;
 }
